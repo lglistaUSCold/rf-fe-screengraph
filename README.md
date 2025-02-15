@@ -12,7 +12,7 @@ Mac - https://formulae.brew.sh/formula/graphviz
 
 ## How to run
 ### Quickstart
-These 2 commands run back to back will produce a file named `out.svg` that you can open in your web browser. You could also pipe the python script output to `dot`
+These 2 commands run back to back will produce a file named `out.svg` that you can open in your web browser. You could also pipe the python script output to `dot`. There are a lot of nodes (~320) and a lot of edges (~1700), so running the `dot` command could take a few minutes depending on your machine.
 ```
 python3 generate_dot_file.py <dir>/USCS-RF-FE >> rffe.dot
 dot -Tsvg rffe.dot >> out.svg
